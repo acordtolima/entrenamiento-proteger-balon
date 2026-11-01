@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Entrenamiento: proteger el balón | Volante central</title>
+  <meta name="description" content="Rutina de 20 minutos para volante central de 17 años: cubrir el balón con el cuerpo, media vuelta y sacar bajo presión." />
+  <style>
+    :root {
+      --bg: #0b1220;
+      --card: #121a2b;
+      --card2: #182235;
+      --text: #e8eef8;
+      --muted: #9eb0c8;
+      --accent: #2dd4a8;
+      --accent2: #3b82f6;
+      --line: #243049;
+      --warn: #fbbf24;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #16324a 0%, transparent 55%),
+                  radial-gradient(900px 500px at 100% 0%, #1a2a1f 0%, transparent 45%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 920px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    header {
+      padding: 1.5rem 0 0.5rem;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 1.75rem;
+    }
+    .badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--bg);
+      background: var(--accent);
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      font-weight: 700;
+    }
+    h1 { font-size: clamp(1.6rem, 4vw, 2.2rem); margin: 0.75rem 0 0.4rem; line-height: 1.2; }
+    .lead { color: #b7c3d6; margin: 0 0 1rem; max-width: 48rem; }
+    .meta {
+      display: flex; flex-wrap: wrap; gap: 0.6rem;
+      color: #9eb0c8; font-size: 0.92rem;
+    }
+    .chip {
+      background: var(--card2);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 0.25rem 0.7rem;
+    }
+    nav.toc {
+      display: flex; flex-wrap: wrap; gap: 0.5rem;
+      margin: 1.25rem 0 0;
+    }
+    nav.toc a {
+      text-decoration: none;
+      background: var(--card);
+      border: 1px solid var(--line);
+      color: var(--text);
+      padding: 0.45rem 0.8rem;
+      border-radius: 0.6rem;
+      font-size: 0.9rem;
+    }
+    nav.toc a:hover { border-color: var(--accent); color: var(--accent); }
+    section { margin: 2.2rem 0; }
+    h2 {
+      font-size: 1.35rem;
+      margin: 0 0 0.85rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--line);
+    }
+    h3 { margin: 1.1rem 0 0.45rem; font-size: 1.05rem; color: #d7e3f5; }
+    .card {
+      background: linear-gradient(180deg, var(--card) 0%, var(--card2) 100%);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      padding: 1.1rem 1.15rem;
+      margin: 0.85rem 0;
+    }
+    .day-title {
+      display: flex; align-items: center; gap: 0.65rem;
+      margin: 0 0 0.55rem;
+    }
+    .day-num {
+      width: 2rem; height: 2rem; border-radius: 0.55rem;
+      display: grid; place-items: center;
+      background: rgba(45, 212, 168, 0.15);
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 0.85rem;
+    }
+    ul { margin: 0.4rem 0 0.2rem; padding-left: 1.2rem; }
+    li { margin: 0.28rem 0; }
+    .keys {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0.75rem;
+    }
+    .key {
+      background: rgba(59, 130, 246, 0.08);
+      border: 1px solid var(--line);
+      border-radius: 0.85rem;
+      padding: 0.9rem;
+    }
+    .key strong { display: block; color: #93c5fd; margin-bottom: 0.25rem; }
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.1rem;
+    }
+    @media (min-width: 720px) {
+      .video-grid { grid-template-columns: 1fr 1fr; }
+    }
+    .video {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 1rem;
+      overflow: hidden;
+    }
+    .video .cap { padding: 0.75rem 0.9rem 0.95rem; }
+    .video .cap strong { display: block; margin-bottom: 0.2rem; }
+    .video .cap span { color: #9eb0c8; font-size: 0.9rem; }
+    .ratio {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      background: #000;
+    }
+    .ratio iframe {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    .note {
+      background: rgba(251, 191, 36, 0.08);
+      border: 1px solid rgba(251, 191, 36, 0.35);
+      border-radius: 0.85rem;
+      padding: 0.9rem 1rem;
+      color: #fde68a;
+    }
+    footer {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--line);
+      color: #8ea0b8;
+      font-size: 0.9rem;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      background: rgba(255,255,255,0.06);
+      padding: 0.1rem 0.35rem;
+      border-radius: 0.3rem;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <span class="badge">Fútbol · Volante central</span>
+      <h1>Proteger el balón con el cuerpo</h1>
+      <p class="lead">
+        Rutina de 20 minutos para un volante central de 17 años.
+        El objetivo no es pelear el balón 10 segundos: es recibir bajo presión,
+        proteger 1–3 segundos y sacar limpio (pase o giro hacia afuera).
+      </p>
+      <div class="meta">
+        <span class="chip">20 min</span>
+        <span class="chip">4 días / semana</span>
+        <span class="chip">Balón + 4 conos</span>
+        <span class="chip">Papá / amigo como presión</span>
+      </div>
+      <nav class="toc" aria-label="Secciones">
+        <a href="#idea">Idea clave</a>
+        <a href="#opciones">3 opciones</a>
+        <a href="#semana">Plan semanal</a>
+        <a href="#videos">Videos</a>
+        <a href="#senales">Señales de progreso</a>
+      </nav>
+    </header>
+
+    <section id="idea">
+      <h2>Idea clave</h2>
+      <div class="card">
+        <ul>
+          <li>Cuerpo entre el rival y el balón</li>
+          <li>Rodillas flexionadas (centro de gravedad bajo)</li>
+          <li>Brazo ligeramente abierto para <em>sentir</em> al defensor (sin empujar con la mano)</li>
+          <li>Balón siempre en el pie más lejos del rival</li>
+        </ul>
+      </div>
+      <p class="note">Material: balón tamaño 5, 4 conos (o zapatos), y alguien que pase / haga presión suave→real.</p>
+    </section>
+
+    <section id="opciones">
+      <h2>Tres opciones del volante central</h2>
+      <div class="keys">
+        <div class="key">
+          <strong>1. Media vuelta</strong>
+          Mira por encima del hombro antes, recibe con el pie lejano y abre hacia el campo.
+        </div>
+        <div class="key">
+          <strong>2. Proteger y sacar</strong>
+          Cuerpo entre rival y balón, 1–2 toques, pase atrás o al costado.
+        </div>
+        <div class="key">
+          <strong>3. Finta + devolución</strong>
+          Vende el giro, suelta al compañero; el rival se compromete.
+        </div>
+      </div>
+    </section>
+
+    <section id="semana">
+      <h2>Plan semanal (día a día)</h2>
+      <p>Si hay entrenamiento de equipo, hazla después del calentamiento o en casa. Jueves es recuperación.</p>
+
+      <div class="card" id="lunes">
+        <div class="day-title"><span class="day-num">L</span><h3 style="margin:0">Lunes — Base del cuerpo</h3></div>
+        <ul>
+          <li>3' calentamiento (movilidad + toques suaves)</li>
+          <li>10' 1 vs 1 en cuadrado 8×8: bloques de 45 s protegiendo, 15 s cambio. Intensidad 70→90%</li>
+          <li>5' mismo cuadrado: recibir, máximo 2 toques, sacar atrás o al costado</li>
+          <li>2' estirar</li>
+        </ul>
+        <p>Video del día: <a href="https://www.youtube.com/watch?v=XAPe56hVvGQ">Luxbacher — Shielding</a></p>
+      </div>
+
+      <div class="card" id="martes">
+        <div class="day-title"><span class="day-num">M</span><h3 style="margin:0">Martes — Giro hacia afuera</h3></div>
+        <ul>
+          <li>3' calentamiento</li>
+          <li>12' “turning out”: pase → siente presión detrás → gira <strong>hacia afuera</strong> → devuelve → se mueve a pedirla otra vez. 3×8 reps</li>
+          <li>5' libre: si hay espacio, media vuelta; si no, proteger y devolver</li>
+        </ul>
+        <p>Video del día: <a href="https://www.youtube.com/watch?v=SfcODBa089c">Turning out | Coach Justyn</a></p>
+      </div>
+
+      <div class="card" id="miercoles">
+        <div class="day-title"><span class="day-num">X</span><h3 style="margin:0">Miércoles — Media vuelta (half-turn)</h3></div>
+        <ul>
+          <li>3' calentamiento</li>
+          <li>10' recibir de lado: mira hombro → pie lejano → abrir hacia el campo → pase adelante. Sin presión primero, luego con marcador a 2 m</li>
+          <li>5' 1 vs 1: punto si saca el balón limpio en menos de 3 s</li>
+          <li>2' estirar</li>
+        </ul>
+        <p>Guía: <a href="https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/build-and-progress/passing-circuit-midfielders-receiving-on-the-half-turn.php">FIFA — midfielders half-turn</a></p>
+      </div>
+
+      <div class="card" id="jueves">
+        <div class="day-title"><span class="day-num">J</span><h3 style="margin:0">Jueves — Descanso o 8' de toques</h3></div>
+        <p>Recuperación. Solo toques suaves si quiere mantener contacto con el balón.</p>
+      </div>
+
+      <div class="card" id="viernes">
+        <div class="day-title"><span class="day-num">V</span><h3 style="margin:0">Viernes — Decisiones bajo presión</h3></div>
+        <ul>
+          <li>3' calentamiento</li>
+          <li>12' presión variable (floja / fuerte / de un lado). Él elige: media vuelta, proteger+sacar, o finta + devolución. 10 reps cada opción</li>
+          <li>5' partidos cortos 1 vs 1 a “mantener 3 pases” (con un tercero si hay)</li>
+        </ul>
+        <p>Video del día: <a href="https://www.youtube.com/watch?v=Yl4Gav_uuks">Centre Mid — Dealing with PRESSURE</a></p>
+      </div>
+
+      <div class="card" id="finde">
+        <div class="day-title"><span class="day-num">S/D</span><h3 style="margin:0">Sábado / Domingo</h3></div>
+        <p>Si hay partido: solo activación suave. Si no, repite el día que más le costó.</p>
+      </div>
+    </section>
+
+    <section id="videos">
+      <h2>Videos (embebidos)</h2>
+      <p>Prioriza los tres primeros si el tiempo es corto. Los demás refuerzan hold-up, giro y contacto.</p>
+      <div class="video-grid">
+        <article class="video">
+          <div class="ratio"><iframe src="https://www.youtube.com/embed/XAPe56hVvGQ" title="Shielding the Ball — Coach Joe Luxbacher" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+          <div class="cap"><strong>Shielding — Luxbacher</strong><span>1 vs 1 con presión progresiva · base del cuerpo</span></div>
+        </article>
+        <article class="video">
+          <div class="ratio"><iframe src="https://www.youtube.com/embed/SfcODBa089c" title="Turning out | Coach Justyn" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+          <div class="cap"><strong>Turning out — Coach Justyn</strong><span>Error típico del medio: girar hacia el marcador</span></div>
+        </article>
+        <article class="video">
+          <div class="ratio"><iframe src="https://www.youtube.com/embed/Yl4Gav_uuks" title="How to play Centre Midfield — Dealing with PRESSURE" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+          <div class="cap"><strong>Centre Mid — presión</strong><span>Cómo manejar presión en el centro del campo</span></div>
+        </article>
+        <article class="video">
+          <div class="ratio"><iframe src="https://www.youtube.com/embed/uQasbpSFFcU" title="Hold Up Play — SoccerViza" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+          <div class="cap"><strong>Hold Up Play — SoccerViza</strong><span>Proteger y jugar de espaldas</span></div>
+        </article>
+        <article class="video">
+          <div class="ratio"><iframe src="https://www.youtube.com/embed/foGOvNZp-Gg" title="Receiving and Turning" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+          <div class="cap"><strong>Receiving and Turning</strong><span>Primer toque + giro hacia el espacio</span></div>
+        </article>
+        <article class="video">
+          <div class="ratio"><iframe src="https://www.youtube.com/embed/wfGzzyq3z4A" title="Working on shielding like pros" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+          <div class="cap"><strong>Shielding like pros</strong><span>Contacto fuerte en 1 vs 1</span></div>
+        </article>
+        <article class="video">
+          <div class="ratio"><iframe src="https://www.youtube.com/embed/fgxh51q2C4A" title="Dribling de protección y avance" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+          <div class="cap"><strong>Dribling de protección</strong><span>En español · proteger y avanzar</span></div>
+        </article>
+      </div>
+
+      <div class="card" style="margin-top:1rem">
+        <h3 style="margin-top:0">Guías FIFA (texto + diagrama)</h3>
+        <ul>
+          <li><a href="https://www.fifatrainingcentre.com/es/practice/futsal/fitness-block/strength-through-shielding.php">Fortaleza física para proteger el balón</a></li>
+          <li><a href="https://www.fifatrainingcentre.com/en/practice/talent-coach-programme/build-and-progress/passing-circuit-midfielders-receiving-on-the-half-turn.php">Midfielders receiving on the half-turn</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="senales">
+      <h2>Señales de que va bien</h2>
+      <div class="card">
+        <ul>
+          <li>Menos giros hacia el rival</li>
+          <li>Primer toque lejos del marcador</li>
+          <li>Saca el balón en 1–3 segundos sin pelear de más</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      Página para entrenamiento personal · Volante central · Proteger el balón.
+      Repo: <a href="https://github.com/acordtolima/entrenamiento-proteger-balon">acordtolima/entrenamiento-proteger-balon</a>
+    </footer>
+  </div>
+</body>
+</html>
